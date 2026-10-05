@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Backups</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --brand: #2d4a63; --ink: #16181a; --muted: #5c6063;
+    --surface: #ffffff; --page: #f6f7f8; --line: #e1e4e8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #f1f2f3; --muted: #a8adb2; --surface: #171a1d; --page: #0e1012; --line: #2a2e33; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--ink);
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { background: var(--brand); color: #fff; padding: 2.5rem 1rem; }
+  .wrap { max-width: 46rem; margin: 0 auto; }
+  header h1 { margin: 0; font-size: 1.8rem; }
+  main { padding: 2rem 1rem 3rem; }
+  section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+            padding: 1.2rem 1.4rem; }
+  a { color: var(--brand); }
+  @media (prefers-color-scheme: dark) { a { color: #8fb8dc; } }
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>Home Backups</h1></div></header>
+<main class="wrap">
+  <section>
+    <p>Home Backups is a small private tool that its owner uses to back up the apps running on his own
+       home server. Every night it encrypts a backup on that server and copies it into the owner's own
+       OneDrive and Google Drive.</p>
+    <p>It is not offered to anyone else and has no users other than its owner.</p>
+    <p><a href="privacy.html">Privacy policy</a></p>
+  </section>
+</main>
+</body>
+</html>

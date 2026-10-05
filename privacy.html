@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Backups: Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --brand: #2d4a63; --ink: #16181a; --muted: #5c6063;
+    --surface: #ffffff; --page: #f6f7f8; --line: #e1e4e8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #f1f2f3; --muted: #a8adb2; --surface: #171a1d; --page: #0e1012; --line: #2a2e33; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--ink);
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { background: var(--brand); color: #fff; padding: 2.25rem 1rem; }
+  .wrap { max-width: 46rem; margin: 0 auto; }
+  header h1 { margin: 0 0 .3rem; font-size: 1.6rem; }
+  header p { margin: 0; opacity: .9; font-size: .95rem; }
+  main { padding: 2rem 1rem 3rem; }
+  section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+            padding: 1.2rem 1.4rem; margin-bottom: 1.2rem; }
+  h2 { font-size: 1.1rem; margin: 0 0 .6rem; }
+  ul { margin: .4rem 0 0; padding-left: 1.15rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--brand); }
+  @media (prefers-color-scheme: dark) { a { color: #8fb8dc; } }
+  code { font-size: .9em; }
+  footer { color: var(--muted); font-size: .9rem; padding: 0 1rem 3rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Home Backups: Privacy Policy</h1>
+    <p>Last updated 5 October 2026</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>The short version</h2>
+    <p>Home Backups is a private tool used only by its owner. It copies encrypted backup files from the
+       owner's own home server into the owner's own cloud storage. It collects nothing about anyone, and
+       nothing is sold, shared or used for advertising.</p>
+  </section>
+
+  <section>
+    <h2>What it can reach</h2>
+    <ul>
+      <li><strong>Google Drive, only files it creates</strong> (<code>drive.file</code>). It creates one
+          "Home Backups" folder and the backup files inside it, and can see and change only those. It
+          cannot see any other file in the Drive.</li>
+      <li><strong>Microsoft OneDrive, only its own app folder</strong>
+          (<code>Files.ReadWrite.AppFolder</code>). It can see and change only the files in
+          Apps/Home Backups.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How the backups are protected</h2>
+    <ul>
+      <li>Every backup is encrypted on the owner's server, with a passphrase only the owner holds,
+          before it is uploaded. Google, Microsoft and anyone else see only unreadable files.</li>
+      <li>The permission to reach the owner's storage is kept on the owner's own server, encrypted.
+          It is not stored anywhere else and is not sent to any other party.</li>
+      <li>There is no Home Backups server, account, analytics, tracking or advertising of any kind.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Google API Services User Data Policy</h2>
+    <p>Home Backups' use and transfer of information received from Google APIs to any other app will
+       adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy"
+       rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <p>In practice: data reached through these permissions is used only to store and restore the
+       owner's own backups. It is never sold, never transferred to anyone, never used for advertising,
+       and never read by anyone except the owner, when restoring his own data.</p>
+  </section>
+
+  <section>
+    <h2>Removing access</h2>
+    <ul>
+      <li>Google: <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a></li>
+      <li>Microsoft: <a href="https://account.live.com/consent/Manage" rel="noopener">account.live.com/consent/Manage</a></li>
+      <li>Backup files stay in the owner's own storage until the owner deletes them.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, the new version is posted on this page with a new date at the top.
+       Questions: through the owner's GitHub profile,
+       <a href="https://github.com/Pr0t3ct0r" rel="noopener">github.com/Pr0t3ct0r</a>.</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p><a href="./">Back to Home Backups</a></p>
+</footer>
+</body>
+</html>
